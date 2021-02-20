@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@chakra-ui/react';
+import RootThemeProvider from './components/ChakraProvider';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RootThemeProvider>
+        <Header />
+        <Box
+          d="grid"
+          gridTemplateColumns={{
+            base:
+              '[gap-start] 10rem [gap-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]'
+          }}
+          gridTemplateRows={{
+            base: '80vh repeat(4, 40vw) min-content'
+          }}></Box>
+      </RootThemeProvider>
+    </>
   );
 }
 
