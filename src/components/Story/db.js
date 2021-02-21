@@ -41,7 +41,7 @@ export const storiesOne = {
       photoSrc: Chisom,
       name: 'Chisom Obilor',
       location: 'In Magodo',
-      type: 'CUSTOMER',
+      type: 'VENDOR',
       text:
         'Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.'
     }
@@ -51,7 +51,7 @@ export const storiesOne = {
       photoSrc: Adunoluwa,
       name: 'Adunoluwa Adeyemi',
       location: 'Iwo Road',
-      type: 'Vendor',
+      type: 'VENDOR',
       text:
         'Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.'
     }
@@ -61,7 +61,7 @@ export const storiesOne = {
       photoSrc: Chidi,
       name: 'Chidi Okeke',
       location: 'In Somolu',
-      type: 'Vendor',
+      type: 'VENDOR',
       text:
         'Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis adet. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.'
     }
