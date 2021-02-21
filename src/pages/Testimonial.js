@@ -5,6 +5,7 @@ import Experience, {
 } from '../components/Experiences/Experience';
 import ToluxJoy from '../components/Experiences/ToluxJoy';
 import Stories from '../components/Story/Story';
+import StoryOne from '../components/Story/StoryOne';
 
 function Testimonial() {
   return (
@@ -13,7 +14,9 @@ function Testimonial() {
       <Experience>
         <ToluxJoy name={experiences['toluxjoy']} />
       </Experience>
-      <Stories />
+      <Stories>
+        <StoryOne />
+      </Stories>
     </>
   );
 }
