@@ -15,7 +15,8 @@ export default {
     3: '3rem',
     3.5: '3.5rem',
     4: '4rem',
-    5: '5rem'
+    5: '5rem',
+    7: '7rem'
   },
   fontSizes: {
     1: '1rem', // 10px
@@ -59,7 +60,9 @@ export default {
         overflowX: 'hidden'
       },
       h1: {
-        fontSize: 4.8
+        fontSize: { base: 3.2, sm: 4, md: 4.8 },
+        lineHeight: { base: '3.8rem', sm: '4.4rem', md: '5.3rem' },
+        fontWeight: 700
       },
       h2: {
         fontSize: 4
@@ -74,7 +77,8 @@ export default {
         fontSize: 2.4
       },
       p: {
-        fontSize: 1.8
+        fontSize: 1.8,
+        fontWeight: 100
       },
       a: {
         fontFamily: 'roboto'
