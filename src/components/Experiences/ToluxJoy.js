@@ -9,8 +9,9 @@ function ToluxJoy({ name }) {
         return (
           <React.Fragment key={data.title}>
             <Box
-              bg="#2E2E2E"
-              borderRadius="50%"
+              pos="relative"
+              display="flex"
+              justify="center"
               gridRow={{
                 base: '3 / 4',
                 sm: '3 / -1',
@@ -21,15 +22,16 @@ function ToluxJoy({ name }) {
                 sm: '3 / 6',
                 md: '2 / 3'
               }}
-              alignSelf={{ base: 'center', lg: 'end' }}
-              w="full">
-              <Text
-                as="img"
-                alt="Tolu & Joy"
-                src={data.photoSrc}
-                maxW="full"
-                h="100%"
-              />
+              alignSelf={{ base: 'center', lg: 'end' }}>
+              <Box bg="#2E2E2E" borderRadius="50%">
+                <Text
+                  as="img"
+                  d="inline-block"
+                  alt="Tolu & Joy"
+                  src={data.photoSrc}
+                  objectFit="contain"
+                />
+              </Box>
             </Box>
             <Box
               gridRow={{ base: '2 / 3', sm: '2 / 3', md: '2 / 6' }}
@@ -55,10 +57,10 @@ function ToluxJoy({ name }) {
                 {data.text}
               </Text>
               <Box>
-                <Text as="p" fontSize={1.6} w="180px">
+                <Text as="p" fontSize={1.6}>
                   SHARE YOUR OWN STORY!
                 </Text>
-                <Text as="img" alt="Border" src={Border} w="185px" />
+                <Text as="img" alt="Border" src={Border} w="216px" />
               </Box>
             </Box>
           </React.Fragment>
