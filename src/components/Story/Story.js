@@ -10,7 +10,8 @@ function Story({ children }) {
         base: 'repeat(auto-fit, minmax(25rem, 1fr))',
         md: 'repeat(auto-fit, minmax(30rem, 1fr))'
       }}
-      gap={{ base: 5, md: 7 }}
+      gridColumnGap={{ base: 5, md: 7 }}
+      gridRowGap={{ base: 8, md: 7 }}
       py={7}>
       {children}
     </Grid>

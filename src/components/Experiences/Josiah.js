@@ -12,6 +12,7 @@ function Josiah({ name }) {
               gridRow={{ base: '3 / 4', md: '2 / 6' }}
               gridColumn={{
                 base: '2 / 7',
+                sm: '3 / 7',
                 md: '2 / 3'
               }}
               alignSelf="center"
