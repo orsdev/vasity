@@ -68,7 +68,9 @@ export default {
         fontSize: 4
       },
       h3: {
-        fontSize: 3.2
+        fontSize: 3.2,
+        fontWeight: 700,
+        lineHeight: '3.4rem'
       },
       h4: {
         fontSize: 3
@@ -78,7 +80,11 @@ export default {
       },
       p: {
         fontSize: 1.8,
-        fontWeight: 100
+        fontWeight: 400
+      },
+      span: {
+        fontSize: 1.3,
+        fontWeight: 500
       },
       a: {
         fontFamily: 'roboto'
