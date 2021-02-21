@@ -14,9 +14,14 @@ function Hero() {
         px={{ base: '2vw', sm: '10vw', md: 0 }}
         pt="6vw">
         <Text as="h1">
-          <Text as="span" d="block">
+          <Text
+            as="span"
+            fontSize="inherit"
+            fontWeight="inherit"
+            lineHeight="inherit"
+            d="block">
             Amazing
-          </Text>{' '}
+          </Text>
           Experiences from Our Wonderful Customers
         </Text>
         <Text as="p" color="accent.black-200" py={1} pr="10vw">
