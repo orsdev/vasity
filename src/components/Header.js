@@ -43,7 +43,11 @@ const Header = () => {
         display="flex"
         h={{ base: isVisible ? '100%' : 0, md: 'auto' }}
         px={1}
-        overflowY={isVisible ? 'visible' : 'hidden'}
+        overflowY={{
+          base: isVisible ? 'visible' : 'hidden',
+          md: 'visible'
+        }}
+        opacity={{ base: isVisible ? 1 : 0, md: 1 }}
         flexDirection={{ base: 'column', md: 'row' }}
         justifyContent={{ base: 'flex-start', md: 'flex-end' }}
         gridColumn={{
@@ -54,7 +58,7 @@ const Header = () => {
         mt={{ base: 1, md: 0 }}
         alignItems={{ base: 'flex-start', md: 'center' }}
         color="text"
-        transition="all .2s"
+        transition="opacity .4s ease"
         bg={{ base: 'accent.light-200', md: 'transparent' }}>
         <NavLink />
         <Button
