@@ -16,7 +16,9 @@ export default {
     3.5: '3.5rem',
     4: '4rem',
     5: '5rem',
-    7: '7rem'
+    7: '7rem',
+    8: '8rem',
+    9: '9rem'
   },
   fontSizes: {
     1: '1rem', // 10px
