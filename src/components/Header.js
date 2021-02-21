@@ -11,16 +11,16 @@ const Header = () => {
     <Box
       pos="relative"
       py={1}
-      px={{ base: 0, md: 2 }}
+      px={{ base: 0 }}
       display="grid"
       alignItems="center"
       bg="transparent"
-      gridTemplateRows="6rem 1fr"
+      gridTemplateRows="6rem 1fr min-content"
       gridTemplateColumns={{
         base:
-          '3rem [frontgap-start] 4rem [frontgap-end logo-start] 1fr [logo-end center-start] min-content [center-end lastgap-start] 4rem [lastgap-end] 3rem',
+          '[full-start] 3rem [frontgap-start] 4rem [frontgap-end logo-start] 1fr [logo-end center-start] min-content [center-end lastgap-start] 4rem [lastgap-end] 3rem [full-end]',
         md:
-          '3rem [frontgap-start] 4rem [frontgap-end logo-start] max-content [logo-end center-start] min-content [center-end col-start] 1fr [col-end lastgap-start] 4rem [lastgap-end] 3rem'
+          '[full-start] 3rem [frontgap-start] 4rem [frontgap-end logo-start] max-content [logo-end center-start] min-content [center-end col-start] 1fr [col-end lastgap-start] 4rem [lastgap-end] 3rem [full-end]'
       }}>
       <Logo />
       <Button
@@ -92,6 +92,39 @@ const Header = () => {
           }}>
           SIGN UP
         </Button>
+      </Flex>
+      <Flex
+        gridRowStart="3"
+        gridColumn="full-start / full-end"
+        border="1px solid rgba(0, 0, 0, 0.08)"
+        fontFamily="roboto"
+        fontSize={1.3}
+        py={1}
+        justifyContent="center"
+        display={{ base: 'none', md: 'flex' }}
+        __css={{
+          '*:not(:last-child)': {
+            mr: 4
+          }
+        }}>
+        <Text as="a" href="#">
+          MARKETPLACE
+        </Text>
+        <Text as="a" href="#">
+          WHOLESALE CENTER
+        </Text>
+        <Text as="a" href="#">
+          SELLER CENTER
+        </Text>
+        <Text as="a" href="#">
+          SEVICES
+        </Text>
+        <Text as="a" href="#">
+          INTERNSHIPS
+        </Text>
+        <Text as="a" href="#">
+          EVENT
+        </Text>
       </Flex>
     </Box>
   );
