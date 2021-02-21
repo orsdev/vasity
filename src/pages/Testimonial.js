@@ -8,6 +8,7 @@ import Josiah from '../components/Experiences/Josiah';
 import Stories from '../components/Story/Story';
 import StoryOne from '../components/Story/StoryOne';
 import StoryTwo from '../components/Story/StoryTwo';
+import Footer from '../components/Footer/Footer';
 
 function Testimonial() {
   return (
@@ -27,6 +28,7 @@ function Testimonial() {
       <Stories>
         <StoryTwo />
       </Stories>
+      <Footer />
     </>
   );
 }
