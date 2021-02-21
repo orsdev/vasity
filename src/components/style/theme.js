@@ -41,6 +41,7 @@ export default {
       'light-200': '#EEF8FF',
       'black-100': '#2E2E2E',
       'black-200': '#494949',
+      'black-300': '#474747',
       grey: '#F0FFEE',
       'blue-200': '#0D019A',
       green: '#049A01'
@@ -76,7 +77,8 @@ export default {
         fontSize: 3
       },
       h5: {
-        fontSize: 2.4
+        fontSize: 2.4,
+        fontWeight: 600
       },
       p: {
         fontSize: 1.8,
