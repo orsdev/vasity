@@ -44,6 +44,7 @@ export default {
       'black-100': '#2E2E2E',
       'black-200': '#494949',
       'black-300': '#474747',
+      'black-400': '#25201D;',
       grey: '#F0FFEE',
       'blue-200': '#0D019A',
       green: '#049A01'
