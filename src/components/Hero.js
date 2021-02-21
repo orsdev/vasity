@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import HeroImage from '../assets/images/hero.png';
 
 function Hero() {
