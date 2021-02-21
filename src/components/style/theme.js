@@ -1,7 +1,7 @@
 export default {
   fonts: {
     body: 'Inter, sans-serif',
-    link: 'Roboto, sans-serif'
+    roboto: 'Roboto, sans-serif'
   },
   space: {
     0: '0',
@@ -32,7 +32,7 @@ export default {
   },
   colors: {
     primary: '#222222',
-    background: '#E5E5E5',
+    background: '#FFFFFF',
     text: '#000',
     secondary: '#FF5C00',
     accent: {
@@ -77,7 +77,7 @@ export default {
         fontSize: 1.8
       },
       a: {
-        fontFamily: 'link'
+        fontFamily: 'roboto'
       }
     }
   }
