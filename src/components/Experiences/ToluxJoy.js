@@ -60,7 +60,12 @@ function ToluxJoy({ name }) {
                 <Text as="p" fontSize={1.6}>
                   SHARE YOUR OWN STORY!
                 </Text>
-                <Text as="img" alt="Border" src={Border} w="216px" />
+                <Text
+                  as="img"
+                  alt="Border"
+                  src={Border}
+                  w={{ base: '180px', lg: '218px' }}
+                />
               </Box>
             </Box>
           </React.Fragment>
