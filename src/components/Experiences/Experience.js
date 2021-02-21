@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 import ToluxJoy from '../../assets/images/banner-1.png';
+import Josiah from '../../assets/images/banner-2.png';
 
 export const experiences = {
   toluxjoy: [
@@ -11,16 +12,19 @@ export const experiences = {
       text:
         'I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!'
     }
+  ],
+  josiah: [
+    {
+      photoSrc: Josiah,
+      title: 'Josiah"s Experience',
+      type: 'VENDOR',
+      text:
+        'I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!'
+    }
   ]
 };
 
-export default function Experience({
-  title,
-  photoSrc,
-  type,
-  text,
-  children
-}) {
+export default function Experience(props) {
   return (
     <>
       <Box
@@ -36,10 +40,9 @@ export default function Experience({
           md: '10rem repeat(4,1fr) 10rem'
         }}
         gridColumn="gap-start / -1"
-        bg="primary"
         overflowY="hidden"
-        gridRowStart={{ base: 3, md: 2 }}>
-        {children}
+        {...props}>
+        {props.children}
       </Box>
     </>
   );
