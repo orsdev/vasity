@@ -83,6 +83,11 @@ export default {
         fontSize: 2.4,
         fontWeight: 600
       },
+      h6: {
+        fontSize: 1.6,
+        fontFamily: 'roboto',
+        fontWeight: 700
+      },
       p: {
         fontSize: 1.8,
         fontWeight: 400
