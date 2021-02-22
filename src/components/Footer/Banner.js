@@ -1,5 +1,6 @@
 import {
-  Grid,
+  Heading,
+  Flex,
   Box,
   Image,
   Text,
@@ -11,37 +12,37 @@ import Button from '../Button';
 
 function Banner() {
   return (
-    <Grid
-      bg="accent.black-400"
+    <Flex
       py={5}
-      templateColumns={{
-        base: '3rem 4rem repeat(6, 1fr) 4rem 3rem',
-        sm: '1fr repeat(6, 6rem) 1fr',
-        md: '10rem repeat(6, 1fr) 10rem'
-      }}
-      templateAutoRows="auto"
-      gridColumnGap={{ base: 2, sm: 7 }}
-      gridRowGap={{ base: 8, md: 7 }}
-      columnGap={7}>
+      justify="center"
+      align={{ base: 'center', md: 'start' }}
+      flexDirection={{ base: 'column', md: 'row' }}>
       <Box
-        gridColumn={{ base: '2 / 11', sm: '3 / 7', md: '2 / 5' }}
-        transform={{ md: 'translateY(-65px)' }}
-        gridRowStart={{ sm: 2, md: 1 }}>
+        transform={{ md: 'translateY(-75px)' }}
+        textAlign="center"
+        order={{ base: 2, md: 1 }}
+        w={{ base: '70%', md: '50%' }}>
         <Image
+          d={{ base: 'inline-block', md: 'block' }}
           src={BannerImage}
           alt="Vasity Banner"
-          maxW={{ base: '100%' }}
+          maxW={{ base: '80%' }}
+          objectFit="contain"
         />
       </Box>
       <Box
-        gridColumn={{ base: '2 / 10', sm: '3 / 8', md: '5 / 8' }}
-        gridRowStart={{ base: 1, md: 1 }}
-        alignSelf="center"
-        pr={{ base: 0, sm: '12vw', md: '4vw' }}
-        pl={{ md: '4vw' }}>
-        <Text as="h5" color="background" mb={1} lineHeight="2.3rem">
-          Be a member of our community 🎉
-        </Text>
+        alignSelf={{ md: 'start' }}
+        w={{ base: '70%', sm: '50%', md: '360px' }}
+        order={{ base: 1, md: 2 }}
+        mb={{ base: 4, md: 0 }}>
+        <Heading
+          as="h5"
+          color="background"
+          mb={1}
+          lineHeight="2.3rem">
+          Be a member <br />
+          of our community 🎉
+        </Heading>
         <Text
           fontSize={1.6}
           color="background"
@@ -83,7 +84,7 @@ function Banner() {
           </Button>
         </FormControl>
       </Box>
-    </Grid>
+    </Flex>
   );
 }
 
